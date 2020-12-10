@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Clock";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    DateTime CurrentTime = DateTime.Now;
+}
+<div>
+    <p>The current time and date:</p>
+</div>
+<div>
+    <p>Date: @CurrentTime.ToString("MMM d, yyy") </p>
+    <p>Time: @CurrentTime.ToString("h:mm tt") </p>
+</div>
